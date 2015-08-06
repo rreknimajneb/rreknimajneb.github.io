@@ -3,3 +3,8 @@
 p {
 	color:purple;
 }
+
+img {
+    border-style:dashed;
+    /*width:5px;*/
+}
