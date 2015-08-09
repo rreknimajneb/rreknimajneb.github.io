@@ -3,11 +3,21 @@
 #side_nav {
     display:inline-block;
     border-color:red;
+    float:left;
+    background-color:blanchedalmond
 }
 
 #ben_body {
     display:inline-block;
+    border-radius:5px;
     border-color:palegreen;
+    border-style:dotted;
+    padding:5px;
+    border:5px;
+    position:relative;
+    background-color:azure;
+    float:right;
+    position:fixed;
 }
 
 .benu {
