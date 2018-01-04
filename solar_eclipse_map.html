@@ -13,10 +13,6 @@ function myMap() {
     center:new google.maps.LatLng(44.5665816,-119.1029021),
     zoom:5,
     };
-    var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-    var marker = new google.maps.Marker({position:myEclipse});
-    marker.setMap(map);
-    
     var myView = new google.maps.Circle({
         center: myEclipse,
         radius: 50000,
@@ -26,7 +22,10 @@ function myMap() {
         fillColor: "#0000FF",
         fillOpacity: 0.4
     });
-    myView.setMap(map)  <!-- draw a circle around my eclipse spot -->
+    myView.setMap(googleMap)  <!-- draw a circle around my eclipse spot -->    
+    var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    var marker = new google.maps.Marker({position:myEclipse});
+    marker.setMap(googleMap);
 }
 </script>
 
